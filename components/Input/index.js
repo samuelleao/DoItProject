@@ -17,7 +17,7 @@ import {
 export function InputCustom(props){
     return(
         <FormControl mb="3">
-        <FormLabel htmlFor={props.name} color="brand.300">{props.label}</FormLabel>
+        <FormLabel htmlFor={props.name} color={theme.colors.brand['300']}>{props.label}</FormLabel>
         <InputGroup>
           {/* <InputLeftElement
             height="100%"
@@ -34,10 +34,9 @@ export function InputCustom(props){
             placeholder={props.placeholder}
             id={props.id}
             _focus={{
-              borderColor: "brand.900"
+              borderColor: theme.colors.brand['800']
             }} />
         </InputGroup>
-
         <FormHelperText>{props.helperText}</FormHelperText>
       </FormControl>
     )

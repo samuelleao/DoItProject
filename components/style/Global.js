@@ -13,8 +13,7 @@ const colors = {
 
 export const heightElements = '60px'
 export const radiusElements = '8px'
-
-export const theme = extendTheme({colors})
+export const theme          = extendTheme({colors})
 
 export function ChakraProviderCustom(props){
     return (

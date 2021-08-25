@@ -4,12 +4,11 @@ import {
   Button,
 } from '@chakra-ui/react'
 
-
 export function ButtonPrimary(props) {
   return (
     <Button
       background={theme.colors.brand['800']}
-      color="brand.500"
+      color={theme.colors.brand['500']}
       height={heightElements}
       border-radius={radiusElements}
       _hover={{
