@@ -1,22 +1,11 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-const colors = {
-  brand: {
-    900: "#8615DF",
-    800: "#38085C",
-    700: "#190429",
-    500: "#ffffff",
-    400: "#F6F6F7",
-    300: "#666665"
-  },
-}
-
-const theme = extendTheme({colors})
-
+import { ChakraProviderCustom } from '../components/style/Global';
+import dynamic from 'next/dynamic'
+const Tabs = dynamic(import('../components/Input/index.js').then(mod => mod.Tabs), { ssr: false })
 export default function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={theme} >
+    <ChakraProviderCustom>
       <Component {...pageProps}/>
-    </ChakraProvider>
+    </ChakraProviderCustom>
   )
 }
 
