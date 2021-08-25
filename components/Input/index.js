@@ -19,11 +19,11 @@ export function InputCustom(props){
         <FormControl mb="3">
         <FormLabel htmlFor={props.name} color="brand.300">{props.label}</FormLabel>
         <InputGroup>
-          <InputLeftElement
+          {/* <InputLeftElement
             height="100%"
             pointerEvents="none"
-            children={props.icon}
-          />
+            children={props.children}
+          >{props.children}</InputLeftElement> */}
           <Input
             background={theme.colors.brand['400']}
             border="3px solid"

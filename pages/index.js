@@ -74,7 +74,8 @@ export default function Home() {
               mb="4"
             >Bem vindo de volta!
             </Text>
-            <InputCustom icon={<FaEnvelope color="brand.500" />} 
+            <InputCustom 
+            icon={<FaEnvelope color="brand.500" />} 
             helperText="Ex: camila@julia.com" 
             placeholder="Digite seu login" 
             label="Login"
@@ -82,7 +83,8 @@ export default function Home() {
             name="login"
             id="login"
             />
-             <InputCustom icon={<FaLock color="brand.500" />} 
+             <InputCustom 
+            icon={<FaLock color="brand.500" />} 
             helperText="" 
             placeholder="Digite sua senha" 
             label="Senha"
