@@ -14,12 +14,12 @@ export default function Home() {
       <Flex
         height={["auto", "auto", "100vh", "100vh"]}
         justifyContent="center"
-        background="brand.800"
+        background={theme.colors.brand['800']}
         bgGradient={[
-          "linear(to-b, brand.800 65%, #fff 35%)",
-          "linear(to-b, brand.800 65%, #fff 35%)",
-          "linear(to-r, brand.800 65%, #fff 35%)",
-          "linear(to-r, brand.800 65%, #fff 35%)"
+          `linear(to-b, ${theme.colors.brand['800']} 65%, #fff 35%)`,
+          `linear(to-b, ${theme.colors.brand['800']} 65%, #fff 35%)`,
+          `linear(to-r, ${theme.colors.brand['800']} 65%, #fff 35%)`,
+          `linear(to-r, ${theme.colors.brand['800']} 65%, #fff 35%)`
         ]}
         alignItems="center"
         padding={["10px 15px", "10px 15px", "0px", "0px"]
